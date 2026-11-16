@@ -1,5 +1,4 @@
-# Turkiye-trade-gdp-analysis
-Statistical analysis of trade openness and GDP in Türkiye (2000-2023) using World Bank data, Stata, correlation analysis, and linear regression.
+# turkiye-trade-gdp-analysis
 
 ## Project Structure
 
@@ -26,7 +25,7 @@ cd "/path/to/your/files"
 do "Dataset.do"
 ```
 
-The script loads `Dataset.QM.dta` and runs descriptive statistics for GDP and trade openness.
+The script loads `Dataset.QM.dta`, runs descriptive statistics, and produces a histogram of trade openness and a scatterplot with a fitted line.
 
 ## Project Overview
 
@@ -36,11 +35,13 @@ This analysis examines the relationship between **trade openness** and **GDP in 
 
 ## Data and Methods
 
-The dataset includes year, nominal GDP (trillion current USD), trade (% of GDP), inflation rate (%), and exchange rate (TRY per USD). The analysis uses descriptive statistics for GDP and trade openness.
+The dataset includes year, nominal GDP (trillion current USD), trade (% of GDP), inflation rate (%), and exchange rate (TRY per USD). The analysis uses descriptive statistics, a histogram of trade openness, and a scatterplot of GDP and trade openness with a fitted line.
 
 ## Key Findings
 
 - **GDP:** Nominal GDP increased from approximately $0.27 trillion in 2000 to $1.12 trillion in 2023.
+- **Exchange rate:** The exchange rate increased from 0.63 to 23.74 TRY per USD, reflecting substantial depreciation of the Turkish lira.
+- **Inflation:** Annual inflation was 54.92% in 2000 and 53.86% in 2023, illustrating persistent price pressures.
 - **Trade openness:** Trade as a share of GDP rose from 42.35% to 66.28%.
 
 ## Data Source
