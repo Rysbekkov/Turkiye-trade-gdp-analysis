@@ -20,3 +20,9 @@ twoway (scatter GDP_trillion TradeofGDP, mcolor(blue)) ///
        title("GDP vs Trade Openness") ///
        ytitle("GDP (Trillion USD)") ///
        xtitle("Trade (% of GDP)")
+
+* Pearson correlation between GDP and trade openness.
+correlate GDP_trillion TradeofGDP
+
+* Simple linear regression: GDP level on trade openness.
+regress GDP_trillion TradeofGDP
