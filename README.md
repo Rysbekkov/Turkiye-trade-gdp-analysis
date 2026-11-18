@@ -3,9 +3,9 @@
 ## Project Structure
 
 ```text
+README.md           # Project overview and instructions
 Dataset.QM.dta      # World Bank economic data (2000–2023)
 Dataset.do          # Stata analysis script
-README.md           # Project overview and instructions
 ```
 
 ## Prerequisites
@@ -25,7 +25,7 @@ cd "/path/to/your/files"
 do "Dataset.do"
 ```
 
-The script loads `Dataset.QM.dta`, runs descriptive statistics, and produces a histogram of trade openness and a scatterplot with a fitted line.
+The script loads `Dataset.QM.dta`, produces a histogram and scatterplot with a fitted line, and runs descriptive statistics, correlation, and simple linear regression.
 
 ## Project Overview
 
@@ -35,7 +35,7 @@ This analysis examines the relationship between **trade openness** and **GDP in 
 
 ## Data and Methods
 
-The dataset includes year, nominal GDP (trillion current USD), trade (% of GDP), inflation rate (%), and exchange rate (TRY per USD). The analysis uses descriptive statistics, a histogram of trade openness, and a scatterplot of GDP and trade openness with a fitted line.
+The dataset includes year, nominal GDP (trillion current USD), trade (% of GDP), inflation rate (%), and exchange rate (TRY per USD). The analysis uses descriptive statistics, a histogram, a scatterplot with a fitted regression line, Pearson correlation, and ordinary least squares (OLS) regression of GDP on trade openness. Inflation and exchange rate variables are included in the dataset but are not predictors in the regression.
 
 ## Key Findings
 
@@ -43,6 +43,10 @@ The dataset includes year, nominal GDP (trillion current USD), trade (% of GDP),
 - **Exchange rate:** The exchange rate increased from 0.63 to 23.74 TRY per USD, reflecting substantial depreciation of the Turkish lira.
 - **Inflation:** Annual inflation was 54.92% in 2000 and 53.86% in 2023, illustrating persistent price pressures.
 - **Trade openness:** Trade as a share of GDP rose from 42.35% to 66.28%.
+- **Pearson correlation:** `r = 0.5358`, indicating a positive association between trade openness and GDP.
+- **Linear regression:** Trade openness coefficient = `0.01454` trillion USD per percentage point (`p = 0.007`); `R² = 0.2871`.
+
+These results describe an association between trade openness and **nominal GDP levels**, not a causal effect on real GDP growth.
 
 ## Data Source
 
